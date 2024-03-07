@@ -51,14 +51,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "Dedicated engineer committed to exploring and mastering every aspect of technology stacks, delivering innovative front-end and back-end solutions across diverse platforms",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ I specialize in creating highly scalable software solutions, harnessing a strong command of Java, Spring Boot, and Python to build systems that stand the test of high user traffic and complex data handling"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡  My track record includes leading the design and implementation of Kafka-based async bulk processing, contributing to increased operational efficiencies and reduced downtimes"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ With hands-on experience in cloud-based project development across Azure and AWS, I drive projects from conceptualization to deployment, ensuring robustness through meticulous lifecycle management and a commitment to Agile methodologies."
     )
   ],
 
@@ -67,36 +67,12 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
     },
     {
       skillName: "sass",
       fontAwesomeClassname: "fab fa-sass"
-    },
-    {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
-    },
-    {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
     },
     {
       skillName: "sql-database",
@@ -129,7 +105,7 @@ const educationInfo = {
   schools: [
     {
       schoolName: "California State University Long Beach",
-      logo: require("./assets/images/CSULB_Logo.png"),
+      logo: require("./assets/images/CSULB_Logo.webp"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - May 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
@@ -140,7 +116,7 @@ const educationInfo = {
     },
     {
       schoolName: "Bangalore University",
-      logo: require("./assets/images/stanfordLogo.png"),
+      logo: require("./assets/images/BULogo.jpeg"),
       subHeader: "Bachelor of Engineering in Information Science",
       duration: "July 2016 - July 2020",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
@@ -218,25 +194,25 @@ const bigProjects = {
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Yana.webp"),
+      projectName: "Yana",
+      projectDesc: "Travel-based app that revolutionises the way you explore the world and connect with fellow adventurers",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "Visit",
+          url: "https://play.google.com/store/apps/details?id=com.travelstories&pli=1"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image: require("./assets/images/Burg.jpeg"),
+      projectName: "Forafera",
+      projectDesc: "Burg is a financial advisory firm serving owners, operators and investors in the global language industry.",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "Visit",
+          url: "https://burgwalden.com/"
         }
       ]
     }
@@ -305,7 +281,7 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
+//Blogs Section
 
 const blogSection = {
   title: "Blogs",
@@ -326,10 +302,10 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
-// Talks Sections
+//Talks Sections
 
 const talkSection = {
   title: "TALKS",
@@ -345,10 +321,10 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
-// Podcast Section
+//Podcast Section
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
@@ -358,22 +334,22 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+  number: "+15623504778",
+  email_address: "contactgurucharan.r@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
