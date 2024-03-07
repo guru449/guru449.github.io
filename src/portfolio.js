@@ -23,17 +23,17 @@ const greeting = {
   username: "Gurucharan Raju",
   title: "Hi all, I'm Guru",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building high scale applications with Java / SpringBoot / Angular JS / Kafka and some other cool libraries and frameworks."
+    "I'm an enthusiastic software engineer with solid experience in designing and developing scalable software. Skilled in Java, Spring Boot, Microservices, and efficient data handling with Kafka, I build applications that are robust and high-performing. My journey includes crafting solutions at Rakuten, where I improved large file processing speeds significantly. Always learning and always coding, I'm all about creating technology that makes a difference."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1IswbWyHCoY91KYNXS-Q5qiWsSCgC6VNt/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1jt0-IE4j3lB0um8cTzyRK3oPCwfFhOu2/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
+  github: "https://github.com/guru449",
   linkedin: "https://www.linkedin.com/in/gurucharan49/",
   gmail: "contactgurucharan.r@gmail.com",
   //gitlab: "https://gitlab.com/saadpasta",
@@ -41,6 +41,7 @@ const socialMediaLinks = {
   //medium: "https://medium.com/@saadpasta",
   //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   leetcode: "https://leetcode.com/GC49/",
+  hackerRank: "https://www.hackerrank.com/profile/contactguruchar1",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -127,10 +128,10 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "Harvard University",
-      logo: require("./assets/images/harvardLogo.png"),
+      schoolName: "California State University Long Beach",
+      logo: require("./assets/images/CSULB_Logo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
+      duration: "August 2023 - May 2025",
       desc: "Participated in the research of XXX and published 3 papers.",
       descBullets: [
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -138,10 +139,10 @@ const educationInfo = {
       ]
     },
     {
-      schoolName: "Stanford University",
+      schoolName: "Bangalore University",
       logo: require("./assets/images/stanfordLogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
+      subHeader: "Bachelor of Engineering in Information Science",
+      duration: "July 2016 - July 2020",
       desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
       descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
     }
@@ -375,7 +376,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
