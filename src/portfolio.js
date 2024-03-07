@@ -51,12 +51,15 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "Dedicated engineer committed to exploring and mastering every aspect of technology stacks, delivering innovative front-end and back-end solutions across diverse platforms",
+  subTitle:
+    "Dedicated engineer committed to exploring and mastering every aspect of technology stacks, delivering innovative front-end and back-end solutions across diverse platforms",
   skills: [
     emoji(
       "⚡ I specialize in creating highly scalable software solutions, harnessing a strong command of Java, Spring Boot, and Python to build systems that stand the test of high user traffic and complex data handling"
     ),
-    emoji("⚡  My track record includes leading the design and implementation of Kafka-based async bulk processing, contributing to increased operational efficiencies and reduced downtimes"),
+    emoji(
+      "⚡  My track record includes leading the design and implementation of Kafka-based async bulk processing, contributing to increased operational efficiencies and reduced downtimes"
+    ),
     emoji(
       "⚡ With hands-on experience in cloud-based project development across Azure and AWS, I drive projects from conceptualization to deployment, ensuring robustness through meticulous lifecycle management and a commitment to Agile methodologies."
     )
@@ -196,7 +199,8 @@ const bigProjects = {
     {
       image: require("./assets/images/Yana.webp"),
       projectName: "Yana",
-      projectDesc: "Travel-based app that revolutionises the way you explore the world and connect with fellow adventurers",
+      projectDesc:
+        "Travel-based app that revolutionises the way you explore the world and connect with fellow adventurers",
       footerLink: [
         {
           name: "Visit",
@@ -208,7 +212,8 @@ const bigProjects = {
     {
       image: require("./assets/images/Burg.jpeg"),
       projectName: "Forafera",
-      projectDesc: "Burg is a financial advisory firm serving owners, operators and investors in the global language industry.",
+      projectDesc:
+        "Burg is a financial advisory firm serving owners, operators and investors in the global language industry.",
       footerLink: [
         {
           name: "Visit",
