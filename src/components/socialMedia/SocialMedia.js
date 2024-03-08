@@ -104,14 +104,14 @@ export default function socialMedia() {
         </a>
       ) : null}
 
-      {socialMediaLinks.stackoverflow ? (
+      {socialMediaLinks.leetcode ? (
         <a
-          href={socialMediaLinks.stackoverflow}
-          className="icon-button stack-overflow"
+          href={socialMediaLinks.leetcode}
+          className="icon-button leetcode"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i className="fab fa-stack-overflow"></i>
+          <i className="cib-leetcode"></i>
           <span></span>
         </a>
       ) : null}
