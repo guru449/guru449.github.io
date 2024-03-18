@@ -11,6 +11,14 @@ export default function ExperienceCard({cardInfo, isDark}) {
     setColorArrays(colorThief.getColor(imgRef.current));
   }
 
+  function openUrlInNewTab(url) {
+    if (!url) {
+      return;
+    }
+    var win = window.open(url, "_blank");
+    win.focus();
+  }
+
   function rgb(values) {
     return typeof values === "undefined"
       ? null
@@ -35,7 +43,16 @@ export default function ExperienceCard({cardInfo, isDark}) {
       <div style={{background: rgb(colorArrays)}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
-          <h5 className="experience-text-company">{cardInfo.company}</h5>
+          <h5 className="experience-text-company">
+            
+          {cardInfo.company.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+
+          </h5>
         </div>
 
         <img
@@ -73,8 +90,38 @@ export default function ExperienceCard({cardInfo, isDark}) {
               : "subTitle experience-text-desc"
           }
         >
-          {cardInfo.desc}
+          {/* {cardInfo.desc} */}
+
+          {cardInfo.desc.split('\n').map((line, index) => (
+        <React.Fragment key={index}>
+          {line}
+          <br />
+        </React.Fragment>
+      ))}
+
+          
         </p>
+
+        <p>
+        {cardInfo.link ? (
+                      <div className="project-card-footer">
+                        {cardInfo.link.map((link, i) => {
+                          return (
+                            <span
+                              key={i}
+                              className={
+                                isDark ? "dark-mode project-tag" : "project-tag"
+                              }
+                              onClick={() => openUrlInNewTab(link.url)}
+                            >
+                              {link.name}
+                            </span>
+                          );
+                        })}
+                      </div>
+                    ) : null}
+        </p>
+
         <ul>
           <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
         </ul>

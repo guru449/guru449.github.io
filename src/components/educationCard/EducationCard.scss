@@ -32,8 +32,8 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 20px;
+  font-weight: 500;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -43,9 +43,9 @@
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  width: 7rem;
+  height: 7rem;
+  box-shadow: 1 1rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }
 
@@ -55,7 +55,7 @@
 
 .education-text-subHeader {
   color: $textColor;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 19px;
   margin: 0px;
   padding-top: 0.8rem;
@@ -64,18 +64,22 @@
 
 .education-text-duration {
   color: $titleColor;
-  font-size: 19px;
+  font-size: 15px;
   margin: 0px;
   padding-top: 0.5rem;
+  font-weight: 400;
 }
 
 .education-text-desc {
+  font-weight: 400;
+  font-size: 15px;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.education-text-bullets > ul {
+.education-text-bullets {
   margin-top: 0.5rem;
+  font-size: 20px;
 }
 
 /* Media Query */
@@ -103,8 +107,8 @@
     font-size: 16px;
   }
   .education-roundedimg {
-    width: 4rem;
-    height: 4rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 0.5rem;
     margin-right: 0px;
   }
@@ -122,13 +126,34 @@
   }
   .education-roundedimg {
     margin-top: 10px;
-    width: 4rem;
-    height: 4rem;
+    width: 10rem;
+    height: 10rem;
     margin-bottom: 1rem;
     margin-right: 0;
   }
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+    font-size: 15px;
+
   }
+
+  .project-card-footer span.project-tag {
+    background: $buttonColor;
+    color: $lightBackground3;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 4px;
+    display: inline-flex;
+    font-size: 0.75rem;
+    height: 2em;
+    justify-content: center;
+    white-space: nowrap;
+    line-height: 1.5;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0 0.75em;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+  }
+  
 }

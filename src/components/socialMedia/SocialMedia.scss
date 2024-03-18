@@ -60,12 +60,20 @@
   background-color: $stackoverflow;
 }
 
+.leetcode i {
+  background-color: $leetcode;
+}
+
 .kaggle i {
   background-color: $kaggle;
 }
 
 .instagram i {
   background-color: $instagram;
+}
+
+.hackerrank i {
+  background-color: $hackerrank;
 }
 
 /* Hover Transition */

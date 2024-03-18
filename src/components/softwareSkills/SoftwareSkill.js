@@ -7,7 +7,7 @@ export default function SoftwareSkill() {
     <div>
       <div className="software-skills-main-div">
         <ul className="dev-icons">
-          {skillsSection.softwareSkills.map((skills, i) => {
+          {skillsSection.backendSkills.map((skills, i) => {
             return (
               <li
                 key={i}

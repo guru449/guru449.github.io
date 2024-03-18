@@ -24,10 +24,13 @@ export default function Greeting() {
               <h1
                 className={isDark ? "dark-mode greeting-text" : "greeting-text"}
               >
-                {" "}
-                {greeting.title}{" "}
-                <span className="wave-emoji">{emoji("👋")}</span>
               </h1>
+
+              {/* <img
+                src={require("../../assets/images/guru-pic.jpeg")}
+                className="photo"
+              ></img> */}
+
               <p
                 className={
                   isDark
@@ -50,16 +53,11 @@ export default function Greeting() {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {illustration.animated ? (
-              <DisplayLottie animationData={landingPerson} />
-            ) : (
+          {/* <div className="greeting-image-div">
               <img
-                alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                src={require("../../assets/images/guru-pic.jpeg")}
               ></img>
-            )}
-          </div>
+          </div> */}
         </div>
       </div>
     </Fade>

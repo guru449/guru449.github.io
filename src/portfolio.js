@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Gurucharan Raju",
-  title: "Hi all, I'm Guru",
+  // title: "Hi all, I'm Guru",
   subTitle: emoji(
-    "I'm an enthusiastic software engineer with solid experience in designing and developing scalable software. Skilled in Java, Spring Boot, Microservices, and efficient data handling with Kafka, I build applications that are robust and high-performing. My journey includes crafting solutions at Rakuten, where I improved large file processing speeds significantly. Always learning and always coding, I'm all about creating technology that makes a difference."
+   "I am a seasoned software engineer with extensive expertise in crafting and optimizing scalable software solutions. Proficient in Java, Spring Boot, Microservices, and Kafka, I excel in engineering robust and high-performing applications. My journey encompasses a Bachelor of Science degree in Computer Science, a tenure as a Senior Software Engineer at Rakuten, and significant contributions as a Software Architect to the open-source project BurgWalden. Additionally, I co-founded Yana, a travel-based application, further honing my entrepreneurial and technical skills. Currently pursuing a Master of Science in Computer Science, I am focused on specializing in scalable Distributed system, Machine learning, and Cloud computing. Continuously embracing new challenges and refining my coding prowess, I am dedicated to leveraging technology to enact meaningful change."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1jt0-IE4j3lB0um8cTzyRK3oPCwfFhOu2/view?usp=drive_link", // Set to empty to hide the button
@@ -50,22 +50,15 @@ const socialMediaLinks = {
 // Skills Section
 
 const skillsSection = {
-  title: "What I do",
-  subTitle: "Dedicated engineer committed to exploring and mastering every aspect of technology stacks, delivering innovative front-end and back-end solutions across diverse platforms",
+  title: "Skills",
+  subTitle: "",
   skills: [
-    emoji(
-      "⚡ I specialize in creating highly scalable software solutions, harnessing a strong command of Java, Spring Boot, and Python to build systems that stand the test of high user traffic and complex data handling"
-    ),
-    emoji("⚡  My track record includes leading the design and implementation of Kafka-based async bulk processing, contributing to increased operational efficiencies and reduced downtimes"),
-    emoji(
-      "⚡ With hands-on experience in cloud-based project development across Azure and AWS, I drive projects from conceptualization to deployment, ensuring robustness through meticulous lifecycle management and a commitment to Agile methodologies."
-    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
 https://fontawesome.com/icons?d=gallery */
 
-  softwareSkills: [
+  backendSkills: [
     {
       skillName: "java",
       fontAwesomeClassname: "fab fa-java"
@@ -87,13 +80,56 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-fire"
     },
     {
+      skillName: "docker",
+      fontAwesomeClassname: "fab fa-docker"
+    }
+  ],
+
+  frontEndSkills: [
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "sass",
+      fontAwesomeClassname: "fab fa-sass"
+    },
+  ],
+  
+  programmingLang: [
+    {
+      skillName: "java",
+      fontAwesomeClassname: "fab fa-java"
+    },
+    {
+      skillName: "c",
+      fontAwesomeClassname: "fa-solid fa-c"
+    },
+    {
+      skillName: "c++",
+      fontAwesomeClassname: "fa-solid fa-c"
+    },
+    {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "javascript",
+      fontAwesomeClassname: "fab fa-js"
+    },
+    {
+      skillName: "c#",
+      fontAwesomeClassname: "fa-solid fa-c"
+    },
+    {
+      skillName: "sql",
+      fontAwesomeClassname: "fa-solid fa-database"
+    },
+    {
+      skillName: "noSQL",
+      fontAwesomeClassname: "fa-solid fa-c"
+    },
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -108,10 +144,9 @@ const educationInfo = {
       logo: require("./assets/images/CSULB_Logo.webp"),
       subHeader: "Master of Science in Computer Science",
       duration: "August 2023 - May 2025",
-      desc: "Participated in the research of XXX and published 3 papers.",
+      desc: "GPA: 4.0/4.0",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Coursework: Advanced Analysis of Alogorithms, Software Engineering, Advanced Artificial Intelligence, Pattern Recognition",
       ]
     },
     {
@@ -119,8 +154,8 @@ const educationInfo = {
       logo: require("./assets/images/BULogo.jpeg"),
       subHeader: "Bachelor of Engineering in Information Science",
       duration: "July 2016 - July 2020",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      desc: "Ranked top 10% in the program.",
+      descBullets: ["Coursework: Algorithm and Data Structures, Database Management Systems, Operating System, Object Oriented Programming, Cybersecurity, Machine Learning"]
     }
   ]
 };
@@ -152,18 +187,49 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Data Engineer",
+      company: "California State University" + "\n Long Beach",
+      companylogo: require("./assets/images/CSULB_Logo.webp"),
+      date: "February 2024 – Present",
+      desc: "Contributions - \n 1. Developed predictive models using Transformation and XGBoost models for tabular data to analyze and forecast student retention and attrition rates, achieving high accuracy and providing actionable insights for educational strategy refinement" + 
+      "\n 2. Utilized advanced analytics techniques in Databricks to preprocess and transform large datasets, ensuring data quality and relevancy for the application which significantly enhanced the decision-making process for academic programs management."
+    },
+    {
       role: "Software Engineer",
       company: "Rakuten",
       companylogo: require("./assets/images/Rakuten_Logo.webp"),
       date: "January 2020 – July 2023",
-      desc: "I played an integral role in developing and enhancing various projects aimed at optimizing data processing, system reliability, and operational efficiency.Developed a scalable async bulk processing project using Kafka queues for reliable data transfer. Implemented advanced splitting and sorting for large files, increasing file download speed by 20x."
+      desc: "Contributions - \n 1. Developed a highly scalable async bulk processing project, leveraging Kafka queues for reliable upload/download of 50k+ records via FTP and REST API, streamlining data ingestion processes" + 
+      "\n 2. Implemented advanced splitting and sorting of large files(~20GB) using Java stream APIs and Python libraries that increased download speed by 20x" + 
+      "\n 3. Achieved over 80% code coverage by implementing more than 200 JUnit tests using Mockito and PowerMockito. Ensured code quality and reliability through the utilization of Spot Bugs, Checkstyle, and PMD"
     },
     {
-      role: "Data Engineer",
-      company: "California State University Long Beach",
-      companylogo: require("./assets/images/CSULB_Logo.webp"),
-      date: "February 2024 – Present",
-      desc: "Worked on predictive models using Transformation and XGBoost models for tabular data to analyze and forecast student retention and attrition rates, achieving high accuracy and providing actionable insights for educational strategy refinement"
+      role: "Software Architect",
+      company: "BurgWalden",
+      companylogo: require("./assets/images/Burg.jpeg"),
+      date: "April 2022 – June 2022",
+      desc: "Contributions -  \n 1.  Pioneered transformative technical solutions for startup operations, spearheading intricate database architecture, seamless CSV data transfer integration with MongoDB, and sophisticated AWS deployment strategies." + 
+      "\n 2. Ideated and implemented top grossing features such as company ranking and tag-based searching, resulting in an average annual profit increase of $500k for investors",
+      footerLink: [
+        {
+          name: "Visit",
+          url: "https://burgwalden.com/"
+        }
+      ]
+    },
+    {
+      role: "Co-Founder",
+      company: "Yana",
+      companylogo: require("./assets/images/Yana.webp"),
+      date: "December 2021 – July 2022",
+      desc: "Contributions -  \n 1.  Leveraged entrepreneurial abilities to design and develop a travel app." + 
+      "\n 2. Liaised between product, UX and tech requirements by defining the product roadmap, strategy, user stories,architecture, system design and development. Currently running app with 100+ users and 4.5/5 rating",
+      footerLink: [
+        {
+          name: "Visit",
+          url: "https://play.google.com/store/apps/details?id=com.travelstories&pli=1"
+        }
+      ]
     }
   ]
 };
@@ -179,25 +245,22 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "Projects",
   projects: [
     {
-      image: require("./assets/images/Yana.webp"),
-      projectName: "Yana",
-      projectDesc: "Travel-based app that revolutionises the way you explore the world and connect with fellow adventurers",
+      projectName: "Enhance Instruction Level Parallelism",
+      projectDesc: "Enhancing ILP through Advanced Loop Unrolling and Dynamic Memory Disambiguation",
       footerLink: [
         {
           name: "Visit",
-          url: "https://play.google.com/store/apps/details?id=com.travelstories&pli=1"
+          url: "https://github.com/guru449/EnhanceInstructionLevelParallelism"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/Burg.jpeg"),
-      projectName: "Forafera",
-      projectDesc: "Burg is a financial advisory firm serving owners, operators and investors in the global language industry.",
+      projectName: "Covid Detection through CNN",
+      projectDesc: "Developed a classification model using convolutional neural networks (CNNs) using VGG16 architecture and Keras framework to detect COVID-19 infection patterns inlung x-rays with accuracies close to 95%",
       footerLink: [
         {
           name: "Visit",
@@ -205,6 +268,7 @@ const bigProjects = {
         }
       ]
     }
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -330,8 +394,8 @@ const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+15623504778",
-  email_address: "contactgurucharan.r@gmail.com"
+  number: "Phone: +15623504778",
+  email_address: "Email: contactgurucharan.r@gmail.com"
 };
 
 // Twitter Section

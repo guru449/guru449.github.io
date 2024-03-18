@@ -6,6 +6,8 @@ import {Fade} from "react-reveal";
 import codingPerson from "../../assets/lottie/codingPerson";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import ProgrammingLang from "../../components/programmingLang/ProgrammingLang";
+import FrontEnd from "../../components/frontEnd/FrontEnd";
 
 export default function Skills() {
   const {isDark} = useContext(StyleContext);
@@ -14,8 +16,8 @@ export default function Skills() {
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
+      {/* <div className="skills-main-div"> */}
+        {/* <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
               <DisplayLottie animationData={codingPerson} />
@@ -26,7 +28,7 @@ export default function Skills() {
               ></img>
             )}
           </div>
-        </Fade>
+        </Fade> */}
         <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1
@@ -34,6 +36,8 @@ export default function Skills() {
             >
               {skillsSection.title}{" "}
             </h1>
+
+            <p> Programming Languages - Python, Java, C++, SQL, HTML, CSS, NoSQL, JavaScript, C#, .NET</p>
             <p
               className={
                 isDark
@@ -43,7 +47,7 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
+            {/* <ProgrammingLang />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -59,10 +63,39 @@ export default function Skills() {
                   </p>
                 );
               })}
-            </div>
+            </div> */}
           </div>
+
+          <div className="skills-text-div">
+            <p> Tools and Frameworks - AWS, Azure, SpringBoot, Hibernate, Docker, CI/CD, Git, NumPy, TensorFlow, PySpark, Pandas, SaaS, Jira, Kafka, MongoDB, Couchbase </p>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {skillsSection.subTitle}
+            </p>
+          </div>
+
+          <div className="skills-text-div">
+            <p> Software Engineering Practices: Agile methodologies, software lifecycle management, microservices, design patterns, Code review,
+Troubleshooting, Debugging, Scrum, Root Cause Analysis, SEO, Project management, Create LLDs HLDs </p>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {skillsSection.subTitle}
+            </p>
+          </div>
+
+
         </Fade>
-      </div>
+      {/* </div> */}
     </div>
   );
 }
