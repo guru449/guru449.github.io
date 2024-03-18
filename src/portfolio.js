@@ -26,7 +26,7 @@ const greeting = {
    "I am a seasoned software engineer with extensive expertise in crafting and optimizing scalable software solutions. Proficient in Java, Spring Boot, Microservices, and Kafka, I excel in engineering robust and high-performing applications. My journey encompasses a Bachelor of Science degree in Computer Science, a tenure as a Senior Software Engineer at Rakuten, and significant contributions as a Software Architect to the open-source project BurgWalden. Additionally, I co-founded Yana, a travel-based application, further honing my entrepreneurial and technical skills. Currently pursuing a Master of Science in Computer Science, I am focused on specializing in scalable Distributed system, Machine learning, and Cloud computing. Continuously embracing new challenges and refining my coding prowess, I am dedicated to leveraging technology to enact meaningful change."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1jt0-IE4j3lB0um8cTzyRK3oPCwfFhOu2/view?usp=drive_link", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1DLoMUX9gy_RP1NipJwXx_56FvHbSVjzn/view?usp=sharing", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
