@@ -23,8 +23,9 @@ const greeting = {
   username: "Gurucharan Raju",
   // title: "Hi all, I'm Guru",
   subTitle: emoji(
-   "Hi there, I’m Gurucharan Raju. Take a look around, and you’ll get a sense of my journey in tech—from being a dedicated student with top grades to tackling real-world challenges with code and data. My educational path has been a solid foundation, with a 4.0 GPA for my Master's at California State University and strong performance during my Bachelor’s at Bangalore University. I’m well-versed in coding with Java, Python, and I have solid experience in handling RDBMS and NOSQL databases. n my professional life, I’ve worn many hats. I’ve built systems that handle large data using Microservice Architecture and Kafka Distributed platform at Rakuten and used data to create ML models to predict how students stick with their studies at CSULB. Teaching others and leading teams to get things done efficiently is something I’m proud of. Whether it’s through guiding interns or streamlining workflows, I’m all about making things run smoothly. But it’s not all about the technical stuff. As someone who’s started a travel app, I know what it means to take an idea and turn it into something people use and love. That balance between making cool tech and understanding what people need is really important to me."
-  ), // Set to empty to hide the button
+   "Hi there, I’m Gurucharan Raju. Take a look around, and you’ll get a sense of my journey in tech—from being a dedicated student with top grades to tackling real-world challenges with code and data. My educational path has been a solid foundation, with a 4.0 GPA for my Master's at California State University and strong performance during my Bachelor’s at Bangalore University. I’m well-versed in coding with Java, Python, and I have solid experience in handling RDBMS and NOSQL databases. In my professional life, I’ve worn many hats. I’ve built systems that handle large data using Microservice Architecture and Kafka Distributed platform at Rakuten as SDE 2 for 3+ years and used data to create ML models to predict how students stick with their studies at CSULB. Teaching others and leading teams to get things done efficiently is something I’m proud of. Whether it’s through guiding interns or streamlining workflows, I’m all about making things run smoothly. But it’s not all about the technical stuff. As someone who’s started a travel app, I know what it means to take an idea and turn it into something people use and love. That balance between making cool tech and understanding what people need is really important to me."
+  ),
+// Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -144,7 +145,7 @@ const educationInfo = {
       duration: "August 2023 - May 2025",
       desc: "GPA: 4.0/4.0",
       descBullets: [
-        "Coursework: Advanced Analysis of Alogorithms, Software Engineering, Advanced Artificial Intelligence, Pattern Recognition",
+        "Coursework: Advanced Analysis of Algorithms, Software Engineering, Advanced Artificial Intelligence, Pattern Recognition",
       ]
     },
     {
@@ -185,7 +186,7 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Data Engineer",
+      role: "Software Engineer/ ML",
       company: "California State University" + "\n Long Beach",
       companylogo: require("./assets/images/CSULB_Logo.webp"),
       date: "February 2024 – Present",
@@ -193,7 +194,7 @@ const workExperiences = {
       "\n 2. Utilized advanced analytics techniques in Databricks to preprocess and transform large datasets, ensuring data quality and relevancy for the application which significantly enhanced the decision-making process for academic programs management."
     },
     {
-      role: "Software Engineer",
+      role: "Software Engineer 2",
       company: "Rakuten",
       companylogo: require("./assets/images/Rakuten_Logo.webp"),
       date: "January 2020 – July 2023",
@@ -202,7 +203,7 @@ const workExperiences = {
       "\n 3. Achieved over 80% code coverage by implementing more than 200 JUnit tests using Mockito and PowerMockito. Ensured code quality and reliability through the utilization of Spot Bugs, Checkstyle, and PMD"
     },
     {
-      role: "Software Architect",
+      role: "Founding Engineer",
       company: "BurgWalden",
       companylogo: require("./assets/images/Burg.jpeg"),
       date: "April 2022 – June 2022",
@@ -216,7 +217,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Co-Founder",
+      role: "Founding Engineer",
       company: "Yana",
       companylogo: require("./assets/images/Yana.webp"),
       date: "December 2021 – July 2022",

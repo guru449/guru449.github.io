@@ -37,7 +37,7 @@ export default function Skills() {
               {skillsSection.title}{" "}
             </h1>
 
-            <p> Programming Languages - Python, Java, C++, SQL, HTML, CSS, NoSQL, JavaScript, C#, .NET</p>
+            <p> Languages & Frameworks - C++, Python, Java, SQL, Spring Boot, Hibernate, J2EE, Servlet, JDBC, JavaScript, ReactJS, JUnit, XML, Shell scripting, Node, Selenium, HTML, CSS</p>
             <p
               className={
                 isDark
@@ -67,7 +67,7 @@ export default function Skills() {
           </div>
 
           <div className="skills-text-div">
-            <p> Tools and Frameworks - AWS, Azure, SpringBoot, Hibernate, Docker, CI/CD, Git, NumPy, TensorFlow, PySpark, Pandas, SaaS, Jira, Kafka, MongoDB, Couchbase </p>
+            <p> Cloud, Version Control & DevOps - AWS, GitHub, Bitbucket, Docker, Docker compose, Kubernetes, Jenkins, CI/CD</p>
             <p
               className={
                 isDark
@@ -80,8 +80,19 @@ export default function Skills() {
           </div>
 
           <div className="skills-text-div">
-            <p> Software Engineering Practices: Agile methodologies, software lifecycle management, microservices, design patterns, Code review,
-Troubleshooting, Debugging, Scrum, Root Cause Analysis, SEO, Project management, Create LLDs HLDs </p>
+            <p> Machine Learning & Data Analysis: Pandas, NumPy, Matplotlib, Seaborn, Jupyter, Vocareum, PyTorch, TensorFlow, Scikit-Learn </p>
+            <p
+              className={
+                isDark
+                  ? "dark-mode subTitle skills-text-subtitle"
+                  : "subTitle skills-text-subtitle"
+              }
+            >
+              {skillsSection.subTitle}
+            </p>
+          </div>
+          <div className="skills-text-div">
+            <p> Software Engineering: 	Agile, SDLC, MVC, Jira, Data Structures and Algorithms, Microservices, Networking protocols (IP, TCP, TLS/SSL, UDP), Design Patterns, OOP, RDBMS, Linux, Troubleshooting, Code Reviews</p>
             <p
               className={
                 isDark
