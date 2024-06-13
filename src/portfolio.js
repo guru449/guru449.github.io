@@ -24,9 +24,7 @@ const greeting = {
   // title: "Hi all, I'm Guru",
   subTitle: emoji(
    "Hi there, I’m Gurucharan Raju. Take a look around, and you’ll get a sense of my journey in tech—from being a dedicated student with top grades to tackling real-world challenges with code and data. My educational path has been a solid foundation, with a 4.0 GPA for my Master's at California State University and strong performance during my Bachelor’s at Bangalore University. I’m well-versed in coding with Java, Python, and I have solid experience in handling RDBMS and NOSQL databases. n my professional life, I’ve worn many hats. I’ve built systems that handle large data using Microservice Architecture and Kafka Distributed platform at Rakuten and used data to create ML models to predict how students stick with their studies at CSULB. Teaching others and leading teams to get things done efficiently is something I’m proud of. Whether it’s through guiding interns or streamlining workflows, I’m all about making things run smoothly. But it’s not all about the technical stuff. As someone who’s started a travel app, I know what it means to take an idea and turn it into something people use and love. That balance between making cool tech and understanding what people need is really important to me."
-  ),
-  resumeLink:
-    "https://drive.google.com/file/d/1DLoMUX9gy_RP1NipJwXx_56FvHbSVjzn/view?usp=sharing", // Set to empty to hide the button
+  ), // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
