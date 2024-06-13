@@ -252,7 +252,7 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit",
-          url: "https://github.com/guru449/EnhanceInstructionLevelParallelism"
+          url: "https://github.com/guru449/EnhanceInstructionLevelParallelism/tree/code_update"
         }
         //  you can add extra buttons here.
       ]
@@ -263,13 +263,13 @@ const bigProjects = {
       footerLink: [
         {
           name: "Visit",
-          url: "https://burgwalden.com/"
+          url: "https://github.com/guru449/Covidtest"
         }
       ]
     }
 
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
