@@ -41,7 +41,7 @@ export default function Greeting() {
                 {greeting.subTitle}
               </p>
               <SocialMedia />
-              <div className="button-greeting-div">
+              {/* <div className="button-greeting-div">
                 <Button text="Contact me" href="#contact" />
                 {greeting.resumeLink && (
                   <Button
@@ -50,7 +50,7 @@ export default function Greeting() {
                     href={greeting.resumeLink}
                   />
                 )}
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <div className="greeting-image-div">
